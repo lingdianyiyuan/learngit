@@ -43,3 +43,13 @@ git merge <name>---合并某分支到当前分支
 git branch -d <name>---删除分支
 
 git pull origin <远程分支名>---更新本地仓库和服务器端保持一致。
+
+## 删除git远程仓库文件/文件夹的方法
+
+git rm <filename>---删除文件
+
+git rm -r <foldername>---删除文件夹
+
+git commit -m "log message"---提交上述操作
+
+git push origin master---推送所有文件到远程库
