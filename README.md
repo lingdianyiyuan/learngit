@@ -68,10 +68,10 @@ ssh-keygen -t rsa -C "youremail@example.com"---创建SSH Key
 
 第2步：登陆GitHub，打开“Account settings”，“SSH Keys”页面。然后，点“Add SSH Key”，填上Title，在Key文本框里粘贴`id_rsa.pub`文件的内容：
 
-![github-addkey-1](https://cdn.liaoxuefeng.com/cdn/files/attachments/001384908342205cc1234dfe1b541ff88b90b44b30360da000/0)
+![0](E:\learngit\0.png)
 
 点“Add Key”，你就应该看到已经添加的Key：
 
-![github-addkey-2](https://cdn.liaoxuefeng.com/cdn/files/attachments/0013849083502905a4caa2dc6984acd8e39aa5ae5ad6c83000/0)
+![1](E:\learngit\1.png)
 
 添加SSH Key是因为github需要识别出提送人，以防冒充，而且git支持ssh协议，GitHub只要知道你的公钥，就可以确定只有你自己才能推送。GitHub可以添加多个Key。
