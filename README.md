@@ -1,5 +1,9 @@
 # git使用方法
 
+[TOC]
+
+## 常用的git命令
+
 pwd---显示当前目录
 
 git config --global user.email "NaoNao.@nao.com"---配置邮箱地址
