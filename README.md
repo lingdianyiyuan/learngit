@@ -2,6 +2,10 @@
 
 pwd---显示当前目录
 
+git config --global user.email "NaoNao.@nao.com"---配置邮箱地址
+
+git config --global user.name "NaoNao"---配置用户名
+
 git init---把目录变成git可管理目的仓库
 
 把文件放进git仓库的步骤；
@@ -53,3 +57,21 @@ git rm -r <foldername>---删除文件夹
 git commit -m "log message"---提交上述操作
 
 git push origin master---推送所有文件到远程库
+
+## 创建SSH Key
+
+第1步：创建SSH Key。在用户主目录下，看看有没有.ssh目录，如果有，再看看这个目录下有没有`id_rsa`和`id_rsa.pub`这两个文件，如果已经有了，可直接跳到下一步。如果没有，打开Shell（Windows下打开Git Bash），创建SSH Key：
+
+ssh-keygen -t rsa -C "youremail@example.com"---创建SSH Key
+
+然后在用户主目录里找到.ssh目录，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的密钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥。
+
+第2步：登陆GitHub，打开“Account settings”，“SSH Keys”页面。然后，点“Add SSH Key”，填上Title，在Key文本框里粘贴`id_rsa.pub`文件的内容：
+
+![github-addkey-1](https://cdn.liaoxuefeng.com/cdn/files/attachments/001384908342205cc1234dfe1b541ff88b90b44b30360da000/0)
+
+点“Add Key”，你就应该看到已经添加的Key：
+
+![github-addkey-2](https://cdn.liaoxuefeng.com/cdn/files/attachments/0013849083502905a4caa2dc6984acd8e39aa5ae5ad6c83000/0)
+
+添加SSH Key是因为github需要识别出提送人，以防冒充，而且git支持ssh协议，GitHub只要知道你的公钥，就可以确定只有你自己才能推送。GitHub可以添加多个Key。
