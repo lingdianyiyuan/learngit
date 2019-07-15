@@ -21,7 +21,7 @@ git官方下载地址 https://git-scm.com/download
 }
 ```
 
-*不要使用 windows 的路径风格，例如  C:\\mysoft\\Git\\Git\\bin\\git.exe。
+*不要使用 windows 的路径风格，例如  C:\\mysoft\\Git\\Git\\bin\\git.exe。*
 
 *要使用   linux style  例如  C:/mysoft/Git/Git/bin/git.exe*。
 
