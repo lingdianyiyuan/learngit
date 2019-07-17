@@ -48,7 +48,7 @@
 
 在默认浏览器中打开HTML
 
-![preview](C:\Users\Administrator\Desktop\vscode-img\preview.gif)	
+![preview](https://github.com/lingdianyiyuan/learngit/blob/master/vscode-img/preview.gif)	
 
 ------
 
